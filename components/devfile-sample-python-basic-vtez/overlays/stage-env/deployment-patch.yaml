@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-vtez
+  namespace: nmukherj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:1ae23ec9d4924bf7f45cd3f51eef92aef853d1c6422d5c31efb6a23b92714ef7
+        name: my-python
+        resources: {}
+status: {}
